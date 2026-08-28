@@ -1,0 +1,5 @@
+name = "trackpermanence"
+version = "0.1.0"
+description = "Pure-Mojo inference for Offline Tracking with Object Permanence: tracklet Re-ID across occlusions + occluded-pose completion (arXiv:2310.01288)"
+tags = ["autolabeling", "tracking", "occlusion", "gru", "inference"]
+tins = []
