@@ -1,5 +1,7 @@
 # TrackPermanence.mojo
 
+[![mojoshelf](https://mojoshelf.org/badge/trackpermanence.svg)](https://mojoshelf.org/tins/trackpermanence) [![mojo nightly](https://mojoshelf.org/badge/trackpermanence/nightly.svg)](https://mojoshelf.org/tins/trackpermanence)
+
 Pure-[Mojo](https://www.modular.com/mojo) inference for **"Offline Tracking
 with Object Permanence"** (Liu & Caesar,
 [arXiv:2310.01288](https://arxiv.org/abs/2310.01288)) — the learned
@@ -27,6 +29,18 @@ the trained completion residual is small):
 Ops implemented step-for-step: 2-layer ReLU MLP, `GRUCell` recurrence
 (forward / reverse, U-GRU), `nn.MultiheadAttention` (batch_first, no masks —
 single un-padded samples), `LayerNorm`, cubic-Hermite prior.
+
+## Install as a mojoshelf tin
+
+Published on [mojoshelf](https://mojoshelf.org/tins/trackpermanence) as `trackpermanence`:
+
+```sh
+pixi shelf add trackpermanence     # pixi mode (git source dependency)
+shelf add trackpermanence          # or as a git submodule
+```
+
+Maintainers release new versions with `shelf publish` from the repo root
+(see [getting started](https://mojoshelf.org/getting-started)).
 
 ## Usage
 
